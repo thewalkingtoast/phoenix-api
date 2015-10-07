@@ -12,4 +12,4 @@ Phoenix is a framework for building scalable web applications with realtime conn
 
 ### How to use this image
 
-    docker run -it --rm -v "$PWD":/code -w /phoenix thewalkingtoast/phoenix-api mix phoenix.new /code/my_new_app
+    docker run -it --rm -v "$PWD":/code -w /phoenix thewalkingtoast/phoenix-api mix phoenix.new --no-brunch /code/my_new_app

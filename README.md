@@ -2,7 +2,7 @@
 
 It features all the latest versions of the Phoenix web framework, the Elixir language and the Erlang platform.
 
-*No Node installation is present so Brunch will not work (no Assets management). This is for APIs only.*
+**No Node installation is present so Brunch will not work (no Assets management). This is for APIs only.**
 
 Borrowed from https://github.com/marcelocg/phoenix-docker
 

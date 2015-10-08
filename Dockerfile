@@ -9,7 +9,9 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # update and install some software requirements
-RUN rm -rf /var/lib/apt/lists/* -vf && apt-get update && apt-get upgrade -y && apt-get install -y curl wget git make
+RUN rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y curl wget git make mysql-client postgresql-client --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 # download and install Erlang package
 RUN wget http://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb \

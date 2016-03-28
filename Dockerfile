@@ -21,8 +21,10 @@ RUN wget http://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb \
 # install erlang from package
 RUN apt-get install -y erlang erlang-ssl erlang-inets && rm erlang-solutions_1.0_all.deb
 
+ENV ELIXIR_VERSION 1.2.3
+
 # install elixir from source
-RUN git clone https://github.com/elixir-lang/elixir.git && cd elixir && git checkout v1.1.1 && make
+RUN git clone https://github.com/elixir-lang/elixir.git && cd elixir && git checkout v$ELIXIR_VERSION && make
 ENV PATH $PATH:/elixir/bin
 
 ENV PHOENIX_VERSION 1.0.3

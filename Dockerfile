@@ -1,6 +1,9 @@
-FROM ubuntu:latest
+FROM phusion/baseimage:latest
 
 MAINTAINER Adam Radabaugh <adam@walkingtoast.com>
+
+# Use baseimage-docker's init system.
+CMD ["/sbin/my_init"]
 
 # Elixir requires UTF-8
 RUN locale-gen en_US.UTF-8

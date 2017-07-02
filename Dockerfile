@@ -2,7 +2,7 @@ FROM elixir:latest
 
 MAINTAINER Adam Radabaugh <adam@walkingtoast.com>
 
-ENV PHOENIX_VERSION 1.2.1
+ENV PHOENIX_VERSION 1.2.4
 
 # update and install some software requirements
 RUN apt-get update && apt-get upgrade -y --fix-missing
